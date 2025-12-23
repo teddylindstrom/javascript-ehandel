@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced functions</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    
+
+    <script>
+      function greeting () {
+        console.log('Hello!');
+      }
+      greeting(); // running the function inside the function body
+
+      const num = 2; //we can save a value in a variable
+      const function1 = function () {
+        console.log('hello2');
+      }; //anonymous function assigned to a variable
+
+      console.log(function1); // shows the function definition
+      console.log(typeof function1); // shows "function"
+      function1(); // runs the function
+
+      const object1 = {
+        num: 2,
+        fun: function greeting() {
+          console.log('hello3');
+        }
+      };
+    </script>
+  </body>
+</html>
