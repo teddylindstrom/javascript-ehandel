@@ -46,12 +46,19 @@
       });
       */
 
+      //setTimeout example. Is the only part that is asynchronous
       setTimeout(function() {
-        console.log('timeout');
-        console.log('timeout2');
-      }, 3000);
+        console.log('timeout'); // runs after 0 milliseconds
+        console.log('timeout2'); // runs after 0 milliseconds
+      }, 3000); // waits 3 seconds before running the function
 
-      console.log('next line');
+      console.log('next line'); // runs immediately after setTimeout is called
+
+      setInterval(function() {
+        console.log('interval');
+      }, 3000); // runs every 3 seconds
+
+      console.log('next line t2'); // runs immediately after setInterval is called
     </script>
   </body>
 </html>
