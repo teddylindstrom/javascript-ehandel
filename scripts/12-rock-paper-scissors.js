@@ -23,7 +23,7 @@
         setInterval(function() {
           const playerMove = pickComputerMove();
           playGame(playerMove);
-        },1000);
+        },1005);
       }
 
       function playGame(playerMove) {
