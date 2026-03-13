@@ -19,11 +19,18 @@
         }
       */
 
+        let isAutoPlaying = false;
+        if (!isAutoPlaying) {
+              setInterval(function() {
+              const playerMove = pickComputerMove();
+              playGame(playerMove);
+            },1000);
+            isAutoPlaying = true;
+          } else {
+
+          }
+
       function autoPlay() {
-        setInterval(function() {
-          const playerMove = pickComputerMove();
-          playGame(playerMove);
-        },1005);
       }
 
       function playGame(playerMove) {
