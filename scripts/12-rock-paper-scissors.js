@@ -20,14 +20,18 @@
       */
 
         let isAutoPlaying = false;
+        let intervalId;
+
         if (!isAutoPlaying) {
-              setInterval(function() {
+            intervalId = setInterval(function() {
               const playerMove = pickComputerMove();
               playGame(playerMove);
             },1000);
             isAutoPlaying = true;
-          } else {
 
+          } else {
+            clearInterval(intervalId);
+            isAutoPlaying = false;
           }
 
       function autoPlay() {
