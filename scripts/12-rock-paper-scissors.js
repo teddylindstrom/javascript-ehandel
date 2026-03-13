@@ -21,8 +21,9 @@
 
         let isAutoPlaying = false;
         let intervalId;
+        {
 
-        if (!isAutoPlaying) {
+          if (!isAutoPlaying) {
             intervalId = setInterval(function() {
               const playerMove = pickComputerMove();
               playGame(playerMove);
@@ -33,7 +34,7 @@
             clearInterval(intervalId);
             isAutoPlaying = false;
           }
-
+        }
       function autoPlay() {
       }
 
